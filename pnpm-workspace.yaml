@@ -1,0 +1,8 @@
+packages:
+  - web
+  - server
+
+ignoredBuiltDependencies:
+  - better-sqlite3
+  - esbuild
+  - msw

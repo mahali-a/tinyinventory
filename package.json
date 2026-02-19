@@ -1,0 +1,22 @@
+{
+  "name": "knostic",
+  "private": true,
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "build": "pnpm -r build",
+    "dev:web": "pnpm --filter @knostic/web dev",
+    "dev:server": "pnpm --filter @knostic/server dev",
+    "build:web": "pnpm --filter @knostic/web build",
+    "build:server": "pnpm --filter @knostic/server build",
+    "db:generate": "pnpm --filter @knostic/server db:generate",
+    "db:migrate": "pnpm --filter @knostic/server db:migrate",
+    "db:seed": "pnpm --filter @knostic/server db:seed",
+    "test": "pnpm -r test"
+  }
+}
